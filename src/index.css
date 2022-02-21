@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('./assets/font/Vazir.ttf');
+}
+*{
+  font-family: 'Vazir', sans-serif !important;
+}
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  background: #636890;
+}
+
+.app {
+  width: 32%;
+  margin: 20px auto;
+}
+
+.form-input {
+  margin: 1rem 0;
+}
+
+.form-input label,
+.form-input input {
+  display: block;
+}
+
+.form-input label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-input input {
+  width: 100%;
+  font: inherit;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+}
+
+.form-input input:focus {
+  outline: none;
+  background: #ebebeb;
+  border-color: #510077;
+}
+
+.form-input--invalid label,
+.form-input--invalid p {
+  color: #ff0000;
+}
+
+.form-input--invalid input {
+  border-color: #ff0000;
+  background: #ffd1d1;
+}
+.btnSend{
+  border: none;
+  background: #3498de;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #e0e0e0;
+  cursor: pointer;
+  padding: 4px 30px;
+  transition: all .2s;
+}
+.btnSend:hover{
+  background: #2e84c2;
+}
+.btnSend:not(hover){
+  background: #3498de;
+}
